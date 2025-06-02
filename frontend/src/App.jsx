@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100">
       <ToastContainer />
-      <Navbar onLogout={handleLogout} />
+      <Navbar onLogout={handleLogout} isAuthenticated={isAuthenticated} />
       <Outlet context={{ isAuthenticated, setIsAuthenticated }} />
     </div>
   );
