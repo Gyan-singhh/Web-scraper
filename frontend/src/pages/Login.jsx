@@ -24,7 +24,11 @@ export default function Login() {
     <div className="flex items-center justify-center min-h-screen">
       <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-lg shadow">
         <h2 className="text-2xl font-bold text-center">Login</h2>
+        <p className="text-center text-sm text-gray-500 mb-4">
+          Username : <strong>admin</strong>, Password : <strong>password</strong>
+        </p>
         {error && <p className="text-red-500 text-center">{error}</p>}
+
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="rounded-md  space-y-4">
             <div>
